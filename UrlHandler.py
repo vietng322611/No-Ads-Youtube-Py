@@ -19,7 +19,6 @@ def ytdl(url, search):
         'default_search': 'auto',
         'audio-format': 'wav',
         'quiet': 'True',
-        'video_quality': '720p',
     }
     with youtubedl(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=False)
