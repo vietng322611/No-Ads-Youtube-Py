@@ -75,7 +75,6 @@ def play(video, title):
                 '-volume', '15',
                 '-vf', f'scale={width}:{height}',
                 '-vf', 'setpts=PTS/30',]
-
     p1 = subprocess.Popen(command, stdout=subprocess.PIPE)
     while True:
         try:
